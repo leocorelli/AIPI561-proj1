@@ -4,6 +4,8 @@
 ## About:
 This project is a command line tool that performs sentiment analysis on a user-inputted sentence. It uses a Distilbert model from the Huggingface🤗 transformers library, fine-tuned on the sentiment analysis task, to calculate whether an input sentence is positive or negative in sentiment. It returns the predicted sentiment of the sentence as well as a confidence score. 
 
+This project uses GitHub Actions to perform continuous integration (CI) upon every push to my repository. Upon push, the requirements will be installed and the code will be linted, tested, and formatted before successfully entering into the codebase.
+
 ## How to run my project:
 ### Option 1, with Docker:
 To download container and run on **arm64** architecture:
