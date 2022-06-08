@@ -3,9 +3,10 @@ import fire
 
 
 def sentiment_analysis(text: str):
-    model = pipeline(
-        "text-classification", model="distilbert-base-uncased-finetuned-sst-2-english"
-    )
+    try:
+        model = pipeline("text-classification", model="./model")
+    except: 
+        model = pipeline("text-classification", model="distilbert-base-uncased-finetuned-sst-2-english")
     return model(text)
 
 
