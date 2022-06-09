@@ -16,6 +16,7 @@ To download container and run on **amd64** architecture:
 1) ``$ docker pull public.ecr.aws/g6h1l3r3/aipi561-proj1-amd64:latest``
 2) ``$ docker run aipi561-proj1-amd64 'example sentence'``, where example sentence is the sentence you want to perform sentiment analysis on (make sure you put sentence in quotes)
 
+**Note:** if ``$ docker pull`` fails: Try ``$ docker logout public.ecr.aws`` and then try pulling again
 
 ### Option 2, with git clone and run locally:
 1) ``$ git clone https://github.com/leocorelli/AIPI561-proj1.git``
